@@ -1,0 +1,15 @@
+If you want to predict the class (Classification type problem) of a continuous variable, a good way to create the classes is to define control limits using Average ± 1 Standard Deviation of the target variable.
+Any data point that is outside these limits can be a Failed/ Non confirming class.
+
+For e.g. if you have the following target variable values – 18, 50, 37, 47, 12.
+The mean and std dev are 32.8 and 17.07, respectively.
+Using the above rule, the control limits are
+UCL: 32.8 + 17.07 = 49.8 and
+LCL: 32.8 – 17.07 = 15.7.
+
+Based on these limits, the target variable can be converted to a class i.e. points above/ below the control limits will be considered as Failed/ Non confirming.
+
+The dataset can be transformed into – A, NA, A, A, NA
+where A: acceptable, NA: Non-acceptable
+
+With this transformation, you can train a classification type algorithm.
