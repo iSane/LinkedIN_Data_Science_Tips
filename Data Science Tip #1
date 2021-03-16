@@ -1,0 +1,4 @@
+Data Science Tip #1
+
+A good way/ thumb rule to detect and remove outliers is to use the 1.5 Interquartile Range (IQR) rule. The rule states that any point lying 1.5 x IQR above the third quartile or below the first quartile can be considered as an outlier.
+Where IQR = Q3 − Q1
