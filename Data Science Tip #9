@@ -1,0 +1,12 @@
+Quickly visualize the descriptive statistics of your dataset using the ‘.describe()’ method from the Pandas library in Python.
+
+For e.g. if your dataset is as shown in the top table in the image below and say it is stored in the variable 'data'.
+data.describe() will give you the descriptive statistics of the dataset. The result is shown in the bottom table in the image below.
+
+
+Python Code
+
+// Consider that your data is stored in a dataframe named 'df'.
+
+// Descriptive statistics for the data is printed by:
+df.describe()
