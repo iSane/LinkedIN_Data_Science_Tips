@@ -1,0 +1,10 @@
+Always split your dataset into 3 groups.
+1. Training
+2. Validation
+3. Testing
+
+Use the training dataset for model building, the validation dataset for model evaluation, and the testing dataset to simulate an unseen dataset (a dataset which the model has not seen). Use the testing dataset to evaluate only when you have finalized the model with the best-selected hyperparameters of the machine learning model.
+
+A simple way to do this is to use the test_train_split function in scikit-learn library.
+This splits the dataset into 2 groups – Testing and Training.
+Use the split function again to split the Training dataset into Training and Validation datasets.
