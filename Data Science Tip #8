@@ -1,0 +1,10 @@
+Cross validation is a resampling method used to evaluate the model’s performance on a smaller dataset. Basically, what it does is, based on the ‘k’ value (which is a parameter used to define the number of group splits) the data is split into ‘k’ equal-sized datasets.
+The first fold is used as a validation set, and the model is fit on the remaining k − 1 folds.
+
+Using a k-fold-cross-validation method ensures that every data point from the original dataset has the chance of appearing in training and test set (compared to splitting the dataset only once using the train_test_split method.
+
+The steps to do this are:
+1. Split the dataset into ‘k’ folds. A value of k= 5 – 10 is normally used.
+2. Fit the model using k-1 folds and validate using the remaining dataset.
+3. Repeat the process until each dataset has been validated i.e. if k=10, repeat the process 10 times. Note down the accuracy/ score of the model.
+4. Calculate the mean accuracy/ score of the folds. This will be your overall accuracy/ score of the model.
