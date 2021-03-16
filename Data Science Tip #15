@@ -1,0 +1,15 @@
+Rather than plotting individual scatter plots to see if two parameters are linearly correlated or not, use the “Pairplot” from the Seaborn library to plot all parameter scatter plots in a dataset.
+The image shows an example using the same dataset that I used in the previous tip #14 (https://lnkd.in/gwiYP4q) having 5 parameters.
+The plot shows the scatter plots for all combinations in the dataset with their density plots shown on the diagonal. This can be used to identify the distribution of the parameter/s.
+
+Additional Tip – If you have a categorical parameter (e.g. Shift, Part) in your dataset, you can segment the plot using the “hue” parameter that colors the plot based on that parameter along with their distributions.
+
+E.g. In the bottom part of the image, the hue is set to Shift. This shows a segmented plot with colors based on the Shift values (A, B, C in this case). This can be used to visualize if any shift has a different pattern/ distribution compared to others.
+
+#Python Code
+#Consider that you have your dataset stored in a variable named 'df'.
+# Plot all parameter scatter plots using:
+sns_plot = sns.pairplot(df, diag_kind='kde')
+
+#To segment the data using a different categorical parameter, add the parameter 'hue' in the code as shown.
+sns.pairplot(df, diag_kind='kde',hue='Shift') #This will color code the scatter plots by the category (Shift, in this case)
