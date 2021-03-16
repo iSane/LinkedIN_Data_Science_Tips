@@ -1,0 +1,11 @@
+Model accuracy can be visualized using the following metrics:
+For Classification Type Problems:
+1. Confusion Matrix
+2. Classification Report
+
+For Regression Type Problems:
+1. Mean Absolute Error (MAE)
+2. Mean Squared Error (MSE)
+3. Root Mean Squared Error (RMSE)
+
+These metrics will help you evaluate if the model is able to predict good results (High Accuracy & Low Error).
