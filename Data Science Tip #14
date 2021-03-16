@@ -1,0 +1,17 @@
+Quickly visualize your dataset using the “.plot()” function from the Matplotlib module.
+
+Say we have a dataset stored in the variable ‘df’ having a DateTime component and 5 parameters as shown in the image below.
+Using the “.plot()” module from Matplotlib, you can quickly visualize the parameter data in the form of line plots, scatter plots, etc. as shown below.
+
+Note that in the case of the line plot, the data points are plotted on Y-axis and an incremental counter is plotted on X-axis.
+
+If you want to display the DateTime component on X-axis, you will have to set the index of the dataframe using the “set_index()” function from the Pandas library. Then any line plot that you visualize will have the index set as the DateTime component (or any column that you choose). The bottom part of the image shows a line plot with the DateTime component on X-axis and data points on Y-axis.
+
+#Python Code
+#The code to plot individual and multiple parameters is as follows:
+#Consider that you want to plot 'Parameter 1' from your dataset that is stored in the variable 'df'.
+#Plot using the '.plot()' function
+
+plt.plot(df['Parameter 1']) #This will create a line chart with Parameter 1 on Y-axis.
+
+plt.plot(df['Parameter 1'], df['Parameter 2'], 'ro') #This will create a scatter chart with Parameter 1 and Parameter 2.
