@@ -1,0 +1,2 @@
+If you are unable to find a strong (+ve/-ve) correlation between the Target and Features using the ‘Average’ value, try using the ‘Standard Deviation’. The variation in the values will most likely have a strong (+ve/-ve) correlation.
+This will help fit the model better.
