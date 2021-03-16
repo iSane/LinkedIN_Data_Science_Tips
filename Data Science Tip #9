@@ -4,9 +4,9 @@ For e.g. if your dataset is as shown in the top table in the image below and say
 data.describe() will give you the descriptive statistics of the dataset. The result is shown in the bottom table in the image below.
 
 
-Python Code
+#Python Code
 
-// Consider that your data is stored in a dataframe named 'df'.
+#Consider that your data is stored in a dataframe named 'df'.
 
-// Descriptive statistics for the data is printed by:
+#Descriptive statistics for the data is printed by:
 df.describe()
