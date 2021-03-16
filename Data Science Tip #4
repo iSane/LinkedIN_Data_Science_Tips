@@ -1,0 +1,4 @@
+A simple way to check your dataset for null values is to use the ‘.info()’ method in pandas. It prints information about your dataset columns and the count of non - null values. Compare it with the length of your dataset to get the count of null values.
+
+A thumb rule here is: If a dataset column/ feature has more than 5% of null values, it is advisable to drop the column/ feature.
+If the dataset column/ feature has less than 5% null values, you can use the pandas method ‘.fillna()’ to fill in values using a specified value. For e.g. filling the null values with column average.
