@@ -1,0 +1,26 @@
+If you are dealing with a time series dataset with a DateTime column, you can use the 'pandas' function ‘to_datetime()’ in python to convert it to a DateTime component.
+Once you have the DateTime component, you can use methods like day, month, weekday name, etc. for additional metrics to analyze.
+
+For e.g. to analyze if any specific weekday has the highest number of alerts or analyzing the monthly trend of sales, etc.
+
+The top table in the image shows the dataset with the DateTime column ‘DateTime’.
+The bottom part of the image shows how to use the ‘to_datetime’ function.
+1. Select the DateTime column and convert it to a DateTime component (You will have to specify the format of the DateTime column. ‘YYYY-MM-DD HH:MM in this case).
+2. Using the methods of ‘.day’, ‘.month’, ‘.year’ etc. you can get the required metrics as shown (Index 0 is the first date in the dataset: 2020-10-05 00:00:00).
+
+These metrics can be stored into new columns in the dataset for further analysis.
+
+#Python Code
+#Consider your data is stored in a dataframe named 'df'
+#The column that is a timeseries is say 'DateTime'
+
+#First you will have to convert the column to a datetime component
+
+df['DateTime'] = pd.to_datetime(df['DateTime'], format = '%Y-%m-%d %H:%M') # format is as per your datetime component
+
+# Then you can get additional metrics as shown below
+df['DateTime'][0].day #day in the value
+df['DateTime'][0].month #month in the value
+df['DateTime'][0].year #year in the value
+df['DateTime'][0].weekday_name #day of the week in the value. E.g Monday, Tuesday, etc.
+df['DateTime'][0].weekday #day of the week in number. E.g 0,1, etc.
