@@ -1,0 +1,7 @@
+Even though the name contains Regression, a Logistic Regression is a classification type algorithm.
+
+E.g. To predict whether an email is Spam/ Not Spam. If a Batch is Good/ Bad.
+
+To predict which class the data point belongs to, a threshold value can be set. Based on this threshold, a probability value is calculated which is then converted to a class.
+
+E.g. if the predicted probability ≥ 0.5, then classify the email as spam else, not spam.
