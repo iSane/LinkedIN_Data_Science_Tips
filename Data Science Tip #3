@@ -1,0 +1,3 @@
+The algorithm Random forest works better than a Decision tree algorithm because it is a forest of trees i.e., they are ‘n’ Decision trees.
+
+Compared to a decision tree, which is built on the entire training dataset, a random forest randomly selects a part of the training dataset and then averages the result. This helps the model predict better because each tree will use a different subset of the training dataset.
